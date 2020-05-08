@@ -1,0 +1,7 @@
+Navigation ada 3
+    // Stack
+    // Drawer
+    // Tabs => Bottom, Top
+
+Sebenarnya Semua Navigation basic nya itu Stack
+
