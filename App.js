@@ -5,9 +5,11 @@ import MainMenuApp from './src/routers/MainMenuApp'
 
 const App = () => {
   const user = 'fikri'
+
+
   return (
     <NavigationContainer>
-      {user 
+      {user
       ?
       <MainMenuApp />
       :

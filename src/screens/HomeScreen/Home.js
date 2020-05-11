@@ -1,8 +1,6 @@
 import React from 'react'
-import { View, Text } from 'react-native'
-import { FlatList } from 'react-native-gesture-handler'
+import { View, Text ,FlatList,SafeAreaView} from 'react-native'
 import { data } from './data'
-import { SafeAreaView } from 'react-native-safe-area-context'
 
 
 const Home = (props) => {

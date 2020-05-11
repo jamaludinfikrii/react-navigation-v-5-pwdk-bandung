@@ -11,7 +11,7 @@ function LoginRegisterRoutes(){
         <Stack.Navigator screenOptions={{
             header : () => null,
             cardStyleInterpolator : CardStyleInterpolators.forHorizontalIOS
-        }} initialRouteName='Login'>
+        }}>
             <Stack.Screen name='Register' component={Register} />
             <Stack.Screen name='Login' component={Login} />
         </Stack.Navigator>

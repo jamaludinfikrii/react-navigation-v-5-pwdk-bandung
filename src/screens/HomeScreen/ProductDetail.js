@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, TouchableOpacity } from 'react-native'
 
 
 function ProductDetail (props){
@@ -8,6 +8,13 @@ function ProductDetail (props){
             <Text>
                 Product : {props.route.params.name}
             </Text>
+            <TouchableOpacity
+                onPress={() => props.navigation.navigate("edit")}
+            >
+                <Text>
+                    Edit
+                </Text>
+            </TouchableOpacity>
         </View>
     )
 }
