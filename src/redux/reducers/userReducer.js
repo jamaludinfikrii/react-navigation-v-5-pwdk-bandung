@@ -1,10 +1,13 @@
 const INITIAL_STATE = {
-    user : 'Seto',
-    email : "seto@gmail.com"
+    user : null
 }
 
 const userReducer = (state=INITIAL_STATE,action) => {
-    return state
+    if(action.type === 'LOGIN_SUCCESS'){
+        return {user : action.payload} // username,id, role
+    }else{
+        return state
+    }
 }
 
 export default userReducer;
