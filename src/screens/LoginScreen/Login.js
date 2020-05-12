@@ -16,10 +16,9 @@ const Login = (props) => {
         if(res.data.error){
           return Alert.alert('Error' , res.data.message)
         }else{
-          AsyncStorage.setItem('dataUser',res.data.data,(err => {
+          AsyncStorage.setItem('dataUser', JSON.stringify(res.data.data),(err => {
             if(err) console.log(err)
             props.saveDataToUserReducer(res.data.data) // {email ;" " , id : , role : }
-
           }))
           // simpan data di persistance storage, AsynchStorage,
           // Simpan data User di global State

@@ -10,14 +10,7 @@ const Search = (props) => {
         title='Open Drawer' 
         onPress={() => props.navigation.openDrawer()}
       />
-      <View>
-        <Text>
-          {props.data.user}
-        </Text>
-        <Text>
-          {props.data.email}
-        </Text>
-      </View>
+      
     </View>
   )
 }
